@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Graphix Iowa</title>
+    <meta name="description" content="Get in touch with Graphix Iowa for all your graphic design needs.">
+    <meta name="keywords" content="Contact Graphix Iowa, Graphic Design, Web Design, Iowa">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.jpg" alt="Graphix Iowa Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-us section-light">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below to get in touch with us.</p>
+            <form id="contact-form" action="https://formspree.io/f/xeojjvvj" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+                
+                <label for="service">Service Inquiring About:</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="Branding">Branding</option>
+                    <option value="Web Design">Web Design</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Custom Illustrations">Custom Illustrations</option>
+                    <option value="Print Design">Print Design</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="budget">Estimated Budget:</label>
+                <input type="number" id="budget" name="budget" placeholder="USD">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                
+                <button type="submit" class="btn-yellow">Send Message</button>
+            </form>
+            <p id="success-message" style="display:none;">Thank you for your message! We will get back to you soon.</p>
+        </section>
+
+        <section class="additional-contact-info section-dark">
+            <h2>Additional Contact Information</h2>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> support@graphixiowa.com</p>
+            <p><strong>Office Hours:</strong> Monday - Friday, 9 AM - 5 PM</p>
+            <p><strong>Contact Person:</strong> Nate Facker, Owner and Lead Designer</p>
+        </section>
+
+        <section class="faq section-light">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">How long does it take to get a response? <i class="fas fa-chevron-down"></i></h3>
+                <p class="faq-answer">We typically respond within 24 hours during business days.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">What services do you offer? <i class="fas fa-chevron-down"></i></h3>
+                <p class="faq-answer">We offer a variety of services including branding, web design, digital marketing, custom illustrations, and print design.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Can I get a custom quote? <i class="fas fa-chevron-down"></i></h3>
+                <p class="faq-answer">Yes, please fill out the contact form with details about your project and we will provide a custom quote.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Graphix Iowa. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

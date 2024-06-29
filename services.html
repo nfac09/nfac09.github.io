@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Graphix Iowa</title>
+    <meta name="description" content="Graphix Iowa offers a range of services including branding, web design, digital marketing, and more.">
+    <meta name="keywords" content="Graphic Design, Web Design, Branding, Digital Marketing, Iowa">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.jpg" alt="Graphix Iowa Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-overview">
+            <h1>Our Services</h1>
+            <p>At Graphix Iowa, we offer a wide range of services to help your business stand out. Our expertise spans various design and branding needs, ensuring we can deliver the solutions you require.</p>
+            <div class="services">
+                <div class="service" id="branding" onclick="openModal('branding-modal')">
+                    <i class="fas fa-palette service-icon"></i>
+                    <h3>Branding Services</h3>
+                    <p>Creating consistent graphics that resonate across various customer needs, including logos, color schemes, and brand guidelines.</p>
+                    <p><strong>Starting at $200</strong></p>
+                </div>
+                <div class="service" id="web-design" onclick="openModal('web-design-modal')">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h3>Web Design</h3>
+                    <p>Crafting beautiful and functional websites that represent your brand and engage your audience.</p>
+                    <p><strong>Starting at $250</strong></p>
+                </div>
+                <div class="service" id="digital-marketing" onclick="openModal('digital-marketing-modal')">
+                    <i class="fas fa-bullhorn service-icon"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Developing strategies and content for social media, email campaigns, and web banners to enhance your online presence.</p>
+                    <p><strong>Custom Quotes Available</strong></p>
+                </div>
+                <div class="service" id="custom-illustrations" onclick="openModal('custom-illustrations-modal')">
+                    <i class="fas fa-pencil-ruler service-icon"></i>
+                    <h3>Custom Illustrations</h3>
+                    <p>Offering unique, brand-specific illustrations that tell a story and connect with audiences.</p>
+                    <p><strong>Starting at $150</strong></p>
+                </div>
+                <div class="service" id="print-design" onclick="openModal('print-design-modal')">
+                    <i class="fas fa-print service-icon"></i>
+                    <h3>Print Design</h3>
+                    <p>Creating high-quality print materials, such as business cards, brochures, and posters, that make a lasting impression.</p>
+                    <p><strong>Starting at $100</strong></p>
+                </div>
+                <div class="service" id="hosting-maintenance" onclick="openModal('hosting-maintenance-modal')">
+                    <i class="fas fa-server service-icon"></i>
+                    <h3>Hosting & Maintenance</h3>
+                    <p>Providing reliable hosting and ongoing maintenance services to ensure your website remains up-to-date and secure.</p>
+                    <p><strong>Starting at $30/month</strong></p>
+                </div>
+            </div>
+            <p>Note: Prices are starting points. Final quotes will be provided based on the scope and complexity of each project.</p>
+        </section>
+
+        <!-- Design Process Section -->
+        <section class="design-process">
+            <h2>Our Design Process</h2>
+            <div class="process-step">
+                <h3>1. Consultation</h3>
+                <p>We begin by understanding your needs, goals, and vision for the project. This helps us create a design that aligns with your brand and objectives.</p>
+                <i class="fas fa-comments"></i>
+            </div>
+            <div class="process-step">
+                <h3>2. Concept Development</h3>
+                <p>Based on the initial consultation, we develop design concepts and ideas that capture the essence of your brand. We work closely with you to refine these concepts.</p>
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <div class="process-step">
+                <h3>3. Design Execution</h3>
+                <p>Once the concept is finalized, we proceed with the design execution. This includes creating detailed graphics, layouts, and other design elements.</p>
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="process-step">
+                <h3>4. Review and Feedback</h3>
+                <p>We present the designs for your review and gather feedback. We make any necessary revisions to ensure the final product meets your expectations.</p>
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="process-step">
+                <h3>5. Delivery and Support</h3>
+                <p>After final approval, we deliver the completed project in the required formats. We also provide ongoing support to ensure your satisfaction.</p>
+                <i class="fas fa-handshake"></i>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta">
+            <h2>Ready to Elevate Your Brand?</h2>
+            <p>Contact us today to discuss your project and get a custom quote. We're excited to work with you!</p>
+            <a href="contact.html" class="btn-yellow">Get in Touch</a>
+        </section>
+
+        <!-- Modals for each service -->
+        <div id="branding-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('branding-modal')">&times;</span>
+                <h2>Branding Services</h2>
+                <p>Our branding services include logo design, color scheme creation, and brand guidelines development. We ensure that your brand identity is cohesive and represents your business values. Packages available:</p>
+                <ul>
+                    <li><strong>Basic Package:</strong> Logo design and color scheme - $200</li>
+                    <li><strong>Standard Package:</strong> Logo, color scheme, and basic brand guidelines - $300</li>
+                    <li><strong>Premium Package:</strong> Complete branding including logo, color scheme, detailed brand guidelines, and business cards - $400</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="web-design-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('web-design-modal')">&times;</span>
+                <h2>Web Design</h2>
+                <p>We create beautiful, functional websites that are tailored to your business needs. Whether you need a simple informational site or a more complex platform, we've got you covered. Packages available:</p>
+                <ul>
+                    <li><strong>Basic Package:</strong> Informational website with basic features - $250</li>
+                    <li><strong>Standard Package:</strong> Website with advanced features such as contact forms and basic SEO - $500</li>
+                    <li><strong>Premium Package:</strong> Full-featured website with SEO, custom graphics, and maintenance - $750</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="digital-marketing-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('digital-marketing-modal')">&times;</span>
+                <h2>Digital Marketing</h2>
+                <p>Enhance your online presence with our digital marketing services. We provide social media management, email marketing, and online advertising strategies. Custom quotes are available based on your needs.</p>
+            </div>
+        </div>
+
+        <div id="custom-illustrations-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('custom-illustrations-modal')">&times;</span>
+                <h2>Custom Illustrations</h2>
+                <p>Our custom illustration services help you tell your brand's story with unique, brand-specific illustrations. Packages available:</p>
+                <ul>
+                    <li><strong>Basic Package:</strong> One custom illustration - $150</li>
+                    <li><strong>Standard Package:</strong> Three custom illustrations - $300</li>
+                    <li><strong>Premium Package:</strong> Five custom illustrations with revisions - $500</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="print-design-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('print-design-modal')">&times;</span>
+                <h2>Print Design</h2>
+                <p>We offer high-quality print design services for business cards, brochures, posters, and more. Packages available:</p>
+                <ul>
+                    <li><strong>Basic Package:</strong> Business card design - $100</li>
+                    <li><strong>Standard Package:</strong> Brochure design - $150</li>
+                    <li><strong>Premium Package:</strong> Complete print package including business cards, brochures, and posters - $250</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="hosting-maintenance-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('hosting-maintenance-modal')">&times;</span>
+                <h2>Hosting & Maintenance</h2>
+                <p>We offer reliable hosting and ongoing maintenance services to ensure your website remains up-to-date and secure. Subscription plans available:</p>
+                <ul>
+                    <li><strong>Basic Plan:</strong> Hosting and basic maintenance - $30/month</li>
+                    <li><strong>Standard Plan:</strong> Hosting, maintenance, and monthly updates - $40/month</li>
+                    <li><strong>Premium Plan:</strong> Full-service hosting, maintenance, updates, and priority support - $50/month</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Graphix Iowa. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+s
